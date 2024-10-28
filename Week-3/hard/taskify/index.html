@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <!-- To Do Column -->
+        <div class="column" data-status="to-do">
+            <h2>To Do</h2>
+            <div id="todo-cards" class="cards-container"></div>
+            <button class="add-btn" onclick="showAddTaskModal('to-do')">Add new</button>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="column" data-status="in-progress">
+            <h2>In Progress</h2>
+            <div id="inprogress-cards" class="cards-container"></div>
+            <button class="add-btn" onclick="showAddTaskModal('in-progress')">Add new</button>
+        </div>
+
+        <!-- Under Review Column -->
+        <div class="column" data-status="under-review">
+            <h2>Under Review</h2>
+            <div id="review-cards" class="cards-container"></div>
+            <button class="add-btn" onclick="showAddTaskModal('under-review')">Add new</button>
+        </div>
+
+        <!-- Finished Column -->
+        <div class="column" data-status="finished">
+            <h2>Finished</h2>
+            <div id="finished-cards" class="cards-container"></div>
+            <button class="add-btn" onclick="showAddTaskModal('finished')">Add new</button>
+        </div>
+    </div>
+
+    <!-- Modal to Add Task -->
+    <div id="addTaskModal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Task</h2>
+            <input type="text" id="taskTitle" placeholder="Task Title" required>
+            <textarea id="taskDescription" placeholder="Task Description"></textarea>
+            <select id="taskPriority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="closeAddTaskModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

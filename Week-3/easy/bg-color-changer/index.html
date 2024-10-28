@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+          position: absolute;
+          bottom: 20px;
+          left: 25%;
+          right: 25%;
+        }
+        .box .Red{
+          padding: 10px 20px;
+          background-color: red;
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+        .box .Yellow{
+          padding: 10px 20px;
+          background-color: rgb(255, 247, 0);
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+        .box .white{
+          padding: 10px 20px;
+          background-color: white;
+          border-radius:3px;
+          color: rgb(0, 0, 0);
+          border: none;
+        }
+        .box .Purple{
+          padding: 10px 20px;
+          background-color: purple;
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+        .box .Green{
+          padding: 10px 20px;
+          background-color: green;
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+        .box .Blue{
+          padding: 10px 20px;
+          background-color: blue;
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+        .box .Default{
+          padding: 10px 20px;
+          background-color: rgb(0, 0, 0);
+          border-radius:3px;
+          color: white;
+          border: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="box">
+        <button value="red" onclick="changeBG(this)" class="Red">Red</button>
+        <button value="yellow" onclick="changeBG(this)" class="Yellow">Yellow</button>
+        <button value="white" onclick="changeBG(this)" class="white">white</button>
+        <button value="purple" onclick="changeBG(this)" class="Purple">Purple</button>
+        <button value="green" onclick="changeBG(this)" class="Green">Green</button>
+        <button value="blue" onclick="changeBG(this)" class="Blue">Blue</button>
+        <button value="black" onclick="changeBG(this)" class="Default">Default</button>
+    </div>
+</main>
+   <script src="bg-color-changer.js"></script>
+</body>
+</html>
